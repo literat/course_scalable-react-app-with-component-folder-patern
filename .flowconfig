@@ -1,0 +1,12 @@
+[ignore]
+
+[untyped]
+
+[include]
+
+[lints]
+all=error
+unclear-type=off
+
+[options]
+include_warnings=true
