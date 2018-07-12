@@ -5,7 +5,7 @@ import Image from './Image';
 import Loading from './Loading';
 import Error from './Error';
 
-class View extends PureComponent{
+class View extends PureComponent {
   static defaultProps = {
     RenderSearchInput: SearchInput,
     RenderImage: Image,
@@ -23,7 +23,7 @@ class View extends PureComponent{
       RenderLoading,
       RenderError,
       RenderImage,
-      RenderSearchInput
+      RenderSearchInput,
     } = this.props;
 
     let renderContent = null;
@@ -37,13 +37,11 @@ class View extends PureComponent{
 
     return (
       <div>
-        <RenderSearchInput initialQuery={initialQuery} onSearch={onLoad}/>
-        <section>
-          {renderContent}
-        </section>
+        <RenderSearchInput initialQuery={initialQuery} onSearch={onLoad} />
+        <section>{renderContent}</section>
       </div>
     );
-  }
+  };
 }
 /*
 
